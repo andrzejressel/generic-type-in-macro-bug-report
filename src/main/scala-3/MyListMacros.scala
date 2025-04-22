@@ -5,9 +5,9 @@ object MyListMacros {
   inline def makeMyListCovariant[T]: MyListCovariant[T] = ${ MyListMacrosImpl.covariantImpl[T] }
   inline def makeMyListContravariant[T]: MyListContravariant[T] = ${ MyListMacrosImpl.contravariantImpl[T] }
 
-  inline def makeMyListInvariantWrapper[T]: InvariantWrapper[T] = new InvariantWrapper[T]
-  inline def makeMyListCovariantWrapper[T]: CovariantWrapper[T] = new CovariantWrapper[T]
-  inline def makeMyListContravariantWrapper[T]: ContravariantWrapper[T] = new ContravariantWrapper[T]
+  def makeMyListInvariantWrapper[T]: InvariantWrapper[T] = new InvariantWrapper[T]
+  def makeMyListCovariantWrapper[T]: CovariantWrapper[T] = new CovariantWrapper[T]
+  def makeMyListContravariantWrapper[T]: ContravariantWrapper[T] = new ContravariantWrapper[T]
 }
 
 class InvariantWrapper[T] {
