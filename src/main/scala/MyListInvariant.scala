@@ -1,0 +1,3 @@
+class MyListInvariant[T] {
+
+}

@@ -1,0 +1,3 @@
+class MyListContravariant[-T] {
+
+}
